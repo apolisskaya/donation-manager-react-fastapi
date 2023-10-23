@@ -4,10 +4,7 @@
 
     ```sh
     $ cd backend
-    $ python3.9 -m venv env
-    $ source env/bin/activate
-    (env)$ pip install -r requirements.txt
-    (env)$ python main.py
+    $ python main.py --reload
     ```
 
     Navigate to [http://localhost:8000](http://localhost:8000)
