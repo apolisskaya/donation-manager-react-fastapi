@@ -1,18 +1,27 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from "react";
-import { render } from 'react-dom';
-import { ChakraProvider } from "@chakra-ui/core";
+import { createRoot } from 'react-dom/client';
 
-import Header from "./Components/Header";
-import Todos from "./Components/Todos";
+import Main from './Components/Main'
+
+import './index.css';
 
 function App() {
   return (
-    <ChakraProvider>
-      <Header />
-      <Todos />
-    </ChakraProvider>
+    <div className="app-container">
+      <div className="header">
+        <h1>Open Seattle Shelter</h1>
+      </div>
+      <main>
+        <div className="component-content">
+          <Main />
+        </div>
+      </main>
+    </div>
   )
 }
 
-const rootElement = document.getElementById("root")
-render(<App />, rootElement)
+const container = document.getElementById('root');
+const root = createRoot(container);
+
+root.render(<App tab="home" />);

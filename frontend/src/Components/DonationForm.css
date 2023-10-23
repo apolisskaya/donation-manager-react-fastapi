@@ -1,0 +1,47 @@
+/* DonationForm.css */
+.donation-form {
+  background-color: #e8f2e9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  margin: 10px; /* Add some margin to separate the form from other elements */
+}
+
+.donation-heading {
+  color: #007acc;
+  font-size: 24px; /* Increase the font size for the heading */
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  background-color: #45a048;
+}
