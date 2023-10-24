@@ -1,5 +1,11 @@
 import React from 'react';
 
+const formatAsMoney = (cents) => {
+    if (cents === null || cents === undefined) return ''; // Handle null or undefined
+    const dollars = cents / 100;
+    return `$${dollars.toFixed(2)}`;
+};
+
 const InventoryReport = ({ reportData }) => {
   return (
     <div>
@@ -15,7 +21,7 @@ const InventoryReport = ({ reportData }) => {
           {reportData.map((item, index) => (
             <tr key={index}>
               <td>{item.resource_type}</td>
-              <td>{item.quantity}</td>
+              <td>{item.resource_type === 'money' ? formatAsMoney(item.quantity) : item.quantity}</td>
             </tr>
           ))}
         </tbody>
