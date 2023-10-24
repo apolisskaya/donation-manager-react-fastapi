@@ -13,9 +13,7 @@ function App() {
         <h1>Open Seattle Shelter</h1>
       </div>
       <main>
-        <div className="component-content">
-          <Main />
-        </div>
+        <Main />
       </main>
     </div>
   )

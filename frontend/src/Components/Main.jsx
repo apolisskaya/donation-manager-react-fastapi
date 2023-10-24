@@ -41,10 +41,14 @@ class Main extends Component {
               )}
             </div>
           ) : (
-            <div>
-              <DonationForm />
-              <DonationDistributionForm />
-              <Reports onGenerateReport={this.handleGenerateReport} />
+            <div className='content-container'>
+              <div className="left-content">
+                <DonationForm />
+              </div>
+              <div className="right-content">
+                <DonationDistributionForm />
+                <Reports onGenerateReport={this.handleGenerateReport} />
+              </div>
             </div>
           )}
         </div>

@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
   
   .main-content {
@@ -43,5 +42,19 @@
     align-items: center;
     justify-content: flex-start;
   }
+
+    /* Add this to your CSS */
+    .content-container {
+        display: flex;
+    }
+    
+    .left-content {
+        flex: 1; /* Takes up available space */
+    }
+    
+    .right-content {
+        flex: 1; /* Takes up available space */
+    }
+  
   
     
