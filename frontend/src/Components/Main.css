@@ -49,11 +49,11 @@
     }
     
     .left-content {
-        flex: 1; /* Takes up available space */
+        flex: 3; /* Takes up available space */
     }
     
     .right-content {
-        flex: 1; /* Takes up available space */
+        flex: 2; /* Takes up available space */
     }
   
   
